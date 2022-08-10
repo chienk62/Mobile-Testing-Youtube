@@ -7,7 +7,7 @@ Test Teardown  Close All Applications
 
 
 *** Test Cases ***
-test1
+Verify New Subscribed Channel
     Click Searchbar
     Enter Into Searchbar  Charlie puth
     Press Search Button
