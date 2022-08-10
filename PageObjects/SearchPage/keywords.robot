@@ -20,7 +20,7 @@ Press Search Button
     Press Keycode  66
 
 Click First Video
-    Wait Until Element Is Visible  ${SearchPageFirstVideo}
+    Wait Until Page Contains Element  ${SearchPageFirstVideo}
     Click Element  ${SearchPageFirstVideo}
     Sleep  6s
 
@@ -69,11 +69,8 @@ Click All Subscribed Channels
     Element Should Contain Text  ${SubsriptionsPageTypeBtn}  Most relevant
     Sleep  2s
 
-Choose A To Z As Order Of Subscribed Channel List
-    Click Element  ${SubsriptionsPageTypeBtn}
-    Click Element  ${SubscriptionsPageTypeAZ}
-    Sleep  2s
-
 Verify If Channel Is Subscribed Successfully
-    Scroll Down  ${SubscriptionsPageSubscribedChannel}
     Page Should Contain Element  ${SubscriptionsPageSubscribedChannel}
+    Click Element  ${SubscriptionsPageSubscribedChannel}
+    Click Element  ${SubscriptionsPageSubscribedHome}
+    Page Should Contain Element  ${SubscriptionsPageSubscribedStatus}

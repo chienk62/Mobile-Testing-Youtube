@@ -1,6 +1,6 @@
 MainPageSearchIcon = "com.google.android.youtube:id/menu_item_1"
 MainPageSearchBar = "com.google.android.youtube:id/search_edit_text"
-SearchPageFirstVideo = "(//android.view.ViewGroup[@content-desc]/android.widget.ImageView[not(@content-desc)])[1]"
+SearchPageFirstVideo = "xpath = (//android.view.ViewGroup[@content-desc]/android.widget.ImageView[not(@content-desc)])[1]"
 VideoPageMix = "//android.view.ViewGroup[starts-with(@content-desc,'Mix')]"
 VideoPageSubsribeBtn = "//android.view.ViewGroup[starts-with(@content-desc,'Subscribe')]"
 SearchPageSubscriptions = "//android.widget.Button[starts-with(@content-desc,'Subscriptions')]/android.widget.ImageView"
@@ -8,3 +8,5 @@ SubsriptionsPageAllBtn = "//android.widget.TextView[@resource-id='com.google.and
 SubsriptionsPageTypeBtn = "//android.widget.TextView[@resource-id='com.google.android.youtube:id/title']"
 SubscriptionsPageTypeAZ = "//android.widget.TextView[contains(@text,'A-Z')]"
 SubscriptionsPageSubscribedChannel = "//android.widget.TextView[@text='Charlie Puth']"
+SubscriptionsPageSubscribedHome = "//android.widget.Button[@resource-id='com.google.android.youtube:id/text' and @content-desc='Home']"
+SubscriptionsPageSubscribedStatus = "//android.view.ViewGroup[@content-desc='Unsubscribe from Charlie Puth.']"
